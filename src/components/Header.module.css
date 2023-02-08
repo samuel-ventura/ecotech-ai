@@ -20,14 +20,14 @@ header {
   border: none;
   color: var(--white);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   border-radius: 0.1rem;
 
   cursor: pointer;
 }
 
 .content button:hover {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .button button {
