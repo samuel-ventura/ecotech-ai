@@ -1,0 +1,32 @@
+:root {
+  --white: #fff;
+  
+  --gray-900: #101010;
+  --gray-800: #151515;
+
+  --green: #67C22F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green);
+}
+
+body {
+  background: var(--gray-800);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+body, input, textarea, button {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
