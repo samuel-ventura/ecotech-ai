@@ -34,7 +34,7 @@ export function Header() {
         {md &&
           <>
             <div className={styles.content}>
-              <button type="button">Home</button>
+              <button type="button" className={styles.activeButton}>Home</button>
               <button type="button">Sobre nós</button>
               <button type="button">Soluções</button>
               <button type="button">Ferramentas</button>
