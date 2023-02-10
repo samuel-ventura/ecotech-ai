@@ -64,6 +64,12 @@ footer {
   flex-direction: column;
 }
 
+@media (max-width: 890px) {
+  .pagesDescriptions {
+    
+  }
+}
+
 .pagesDescriptions div a:first-child {
   color: var(--white);
   font-size: 1.25rem;

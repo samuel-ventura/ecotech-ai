@@ -2,6 +2,8 @@ import { InstagramLogo, FacebookLogo, LinkedinLogo } from 'phosphor-react';
 import styles from './Footer.module.css';
 import { Logo } from './Logo';
 
+// refatorar toda a estrutura dos links do footer
+
 export function Footer() {
   return (
     <>
