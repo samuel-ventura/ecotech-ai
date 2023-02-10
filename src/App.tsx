@@ -1,4 +1,5 @@
-import { Header } from "./components/Header";
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 import './global.css'
 import styles from './App.module.css';
@@ -29,6 +30,7 @@ function App() {
   return (
     <>
       <Header useMediaQueries={useMediaQueries} />
+      <Footer />
     </>
   )
 }
