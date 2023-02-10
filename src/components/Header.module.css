@@ -28,7 +28,7 @@ header {
 
 .content .activeButton {
   font-weight: 600;
-  padding: 2.2rem 0 2.2rem 0;
+  padding: 2.2rem 0.5rem 2.2rem 0.5rem;
   border-bottom: 2px solid var(--green);
 }
 
