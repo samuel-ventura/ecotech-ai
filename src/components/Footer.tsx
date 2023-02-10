@@ -7,11 +7,11 @@ export function Footer() {
     <>
       <footer>
         <div className={styles.infoBusiness}>
-          <div>
+          <div className={styles.logo}>
             <Logo />
           </div>
           <div className={styles.info}>
-            <p>© 2023 EcoTech AI Solutions | Todos os direitos reservados</p>
+            <p>2023 EcoTech AI Solutions <br/> Todos os direitos reservados</p>
             <div>
               <a href="/"> <InstagramLogo size={30} color="#151515" weight='fill' /> </a>
               <a href="/"> <FacebookLogo size={30} color="#151515" weight='fill' /> </a>
@@ -21,24 +21,24 @@ export function Footer() {
         </div>
         <div className={styles.pagesDescriptions}>
           <div>
-            <p>Sobre</p>
-            <span>Missão</span>
-            <span>Valores</span>
-            <span>Áreas de atuação</span>
+            <a href="/">Sobre</a>
+            <a href="">Missão</a>
+            <a href="">Valores</a>
+            <a href="">Áreas de atuação</a>
           </div>
           <div>
-            <p>Soluções</p>
-            <span>Solar Spot</span>
-            <span>Renew Efficiency</span>
-            <span>PowerPlanner AI</span>
-            <span>Tecnologias e Ferramentas</span>
+            <a href="">Soluções</a>
+            <a href="">Solar Spot</a>
+            <a href="">Renew Efficiency</a>
+            <a href="">PowerPlanner AI</a>
+            <a href="">Tecnologias e Ferramentas</a>
           </div>
           <div>
-            <p>Suporte</p>
-            <span>Depoimentos</span>
-            <span>Comunidade</span>
-            <span>Central de ajuda</span>
-            <span>Dúvidas</span>
+            <a href="">Suporte</a>
+            <a href="">Depoimentos</a>
+            <a href="">Comunidade</a>
+            <a href="">Central de ajuda</a>
+            <a href="">Dúvidas</a>
           </div>
         </div>
       </footer>

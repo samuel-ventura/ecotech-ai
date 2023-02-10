@@ -7,6 +7,7 @@ header {
 
   background: transparent;
   box-shadow: 0 0 2px 0 var(--green);
+  margin-bottom: 2px;
 }
 
 .content {
