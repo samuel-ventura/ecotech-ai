@@ -2,13 +2,24 @@ footer {
   display: flex;
   background: var(--gray-800);
   width: 100%;
-  height: 22rem;
-
+  height: 100%;
+  min-height: 22rem;
   padding: 2rem;
+  
   align-items: center;
   justify-content: center;
 
   gap: 5rem;
+}
+
+@media (max-width: 975px) {
+  footer {
+    align-items: flex-start;
+  }
+
+  .pagesDescriptions {
+    max-width: 30rem;
+  }
 }
 
 .infoBusiness {
@@ -19,6 +30,7 @@ footer {
 
 .logo {
   display: flex;
+  flex-direction: column;
 }
 
 .info {
@@ -34,13 +46,13 @@ footer {
   color: var(--gray-300);
 }
 
-.info div {
+.info nav {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
 }
 
-.info div a {
+.info nav a {
   display: flex;
   height: 2.5rem;
   width: 2.5rem;
@@ -53,34 +65,35 @@ footer {
   transition: background 0.3s;
 }
 
-.info div a:hover {
+.info nav a:hover {
   background: var(--green);
 }
 
 .pagesDescriptions {
   display: flex;
-  gap: 4rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
-.pagesDescriptions div {
+.pagesDescriptions ul {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
-@media (max-width: 890px) {
-  .pagesDescriptions {
-    
-  }
+.pagesDescriptions ul li {
+  list-style-type: none;
 }
 
-.pagesDescriptions div a:first-child {
+.pagesDescriptions ul li span {
   color: var(--white);
   font-size: 1.25rem;
   font-weight: 600;
   text-decoration: none;
 }
 
-.pagesDescriptions div a {
+.pagesDescriptions ul li a {
   font-size: 1rem;
   font-weight: 400;
   color: var(--gray-400);
@@ -88,6 +101,6 @@ footer {
   text-decoration: none;
 }
 
-.pagesDescriptions div a:hover {
+.pagesDescriptions ul a:hover {
   color: var(--white);
 }

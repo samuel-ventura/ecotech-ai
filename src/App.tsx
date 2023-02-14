@@ -20,7 +20,7 @@ function useMediaQuery(query: string) {
 }
 
 function useMediaQueries() {
-  const md = useMediaQuery("(min-width: 890px)");
+  const md = useMediaQuery("(min-width: 920px)");
   const lg = useMediaQuery("(min-width: 1200px)");
 
   return { md, lg };
