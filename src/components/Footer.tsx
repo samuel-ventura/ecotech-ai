@@ -1,5 +1,5 @@
 import { InstagramLogo, FacebookLogo, LinkedinLogo } from 'phosphor-react';
-import styles from './Footer.module.css';
+import styles from './styles/Footer.module.css';
 import { Logo } from './Logo';
 
 export function Footer() {
