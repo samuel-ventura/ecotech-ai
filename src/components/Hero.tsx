@@ -13,7 +13,7 @@ export function Hero() {
           <p>Desenvolver soluções inovadoras e sustentáveis nunca foi tão fácil<br />com o auxílio da nossa inteligência artificial</p>
         </div>
         <div className={styles.button}>
-          <button><ArrowDown size="3.2rem" color="#D9D9D9" weight="regular" /></button>
+          <button type="button" name="Botão para próxima sessão"><ArrowDown size="3.2rem" color="#D9D9D9" weight="regular" /></button>
         </div>
       </div>
     </>
