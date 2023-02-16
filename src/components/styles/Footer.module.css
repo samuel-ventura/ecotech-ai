@@ -3,12 +3,12 @@ footer {
   background: var(--gray-800);
   width: 100%;
   height: 100%;
-  min-height: 22rem;
+  min-height: 20rem;
   padding: 2rem;
   
   align-items: center;
   justify-content: center;
-
+  
   gap: 5rem;
 }
 
@@ -30,7 +30,17 @@ footer {
 
 .logo {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
+}
+
+.logo > span {
+  align-self: center;
+  margin-top: 1rem;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to left, var(--gray-800), var(--green), var(--gray-800));
+  opacity: 30%;
 }
 
 .info {

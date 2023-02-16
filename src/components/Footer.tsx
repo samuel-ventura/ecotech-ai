@@ -2,13 +2,43 @@ import { InstagramLogo, FacebookLogo, LinkedinLogo } from 'phosphor-react';
 import styles from './styles/Footer.module.css';
 import { Logo } from './Logo';
 
+const pagesDescriptionSessions = [
+  {
+    title: 'Sobre',
+    linkList: [
+      'Missão',
+      'Valores',
+      'Áreas de Segurança'
+    ]
+  },
+  {
+    title: 'Soluções',
+    linkList: [
+      'Solar Spot',
+      'Renew Efficiency',
+      'PowerPlanner AI',
+      'Tecnologias e Ferramentas'
+    ]
+  },
+  {
+    title: 'Suporte',
+    linkList: [
+      'Depoimentos',
+      'Comunidade',
+      'Central de ajuda',
+      'Dúvidas'
+    ]
+  }
+]
+
 export function Footer() {
   return (
     <>
       <footer>
         <div className={styles.infoBusiness}>
           <div className={styles.logo}>
-            <Logo />  
+            <Logo />
+            <span></span>
           </div>
           <div className={styles.info}>
             <p>2023 EcoTech AI Solutions <br /> Todos os direitos reservados</p>
@@ -20,26 +50,22 @@ export function Footer() {
           </div>
         </div>
         <nav className={styles.pagesDescriptions}>
-          <ul>
-            <li><span>Sobre</span></li>
-            <li><a href="">Missão</a></li>
-            <li><a href="">Valores</a></li>
-            <li><a href="">Áreas de atuação</a></li>
-          </ul>
-          <ul>
-            <li><span>Soluções</span></li>
-            <li><a href="">Solar Spot</a></li>
-            <li><a href="">Renew Efficiency</a></li>
-            <li><a href="">PowerPlanner AI</a></li>
-            <li><a href="">Tecnologias e Ferramentas</a></li>
-          </ul>
-          <ul>
-            <li><span>Suporte</span></li>
-            <li><a href="">Depoimentos</a></li>
-            <li><a href="">Comunidade</a></li>
-            <li><a href="">Central de ajuda</a></li>
-            <li><a href="">Dúvidas</a></li>
-          </ul>
+          {
+            pagesDescriptionSessions.map((sessionDescription) => {
+              return (
+                <ul>
+                  <li><span>{sessionDescription.title}</span></li>
+                  {
+                    sessionDescription.linkList.map(link => {
+                      return (
+                        <li><a href="">{link}</a></li>
+                      )
+                    })
+                  }
+                </ul>
+              )
+            })
+          }
         </nav>
       </footer>
     </>

@@ -1,22 +1,22 @@
 import styles from './styles/Header.module.css';
 import { Logo } from './Logo';
+import { SetStateAction, useState } from 'react';
 
 interface HeaderProps {
   useMediaQueries: () => {
     md: boolean,
     lg: boolean,
-  };
+  }
 }
-
-const sessionContentName = [
-  'Home',
-  'Sobre nós',
-  'Soluções',
-  'Ferramentas'
-]
 
 export function Header({ useMediaQueries }: HeaderProps) {
   const { md, lg } = useMediaQueries();
+
+  const [activeSession, setActiveSession] = useState(0);
+  
+  function handleActiveSession(buttonIndex: SetStateAction<number>) {
+    setActiveSession(buttonIndex)
+  }
 
   return (
     <>
@@ -26,13 +26,11 @@ export function Header({ useMediaQueries }: HeaderProps) {
         {md &&
           <>
             <div className={styles.content}>
-              {sessionContentName.map((content) => {
-                return content === 'Home'
-                  ?
-                  <button type="button" className={styles.activeButton}>{content}</button>
-                  :
-                  <button type="button">{content}</button>
-              })}
+              
+              <button type="button" className={activeSession === 0 ? styles.activeButton : ""} onClick={() => handleActiveSession(0)}>Home</button>
+              <button type="button" className={activeSession === 1 ? styles.activeButton : ""} onClick={() => handleActiveSession(1)}>Sobre nós</button>
+              <button type="button" className={activeSession === 2 ? styles.activeButton : ""} onClick={() => handleActiveSession(2)}>Soluções</button>
+              <button type="button" className={activeSession === 3 ? styles.activeButton : ""} onClick={() => handleActiveSession(3)}>Ferramentas</button>
             </div>
 
             <div className={styles.button}>

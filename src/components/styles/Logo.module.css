@@ -22,6 +22,6 @@
 
 .logo .logoName span:last-child {
   color: var(--green);
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-weight: 300;
 }
