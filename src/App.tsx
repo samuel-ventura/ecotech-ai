@@ -31,8 +31,8 @@ function useMediaQueries() {
 function App() {
   return (
     <>
-      <Header useMediaQueries={useMediaQueries} ></Header>
-      <Hero></Hero>
+      <Header useMediaQueries={useMediaQueries} />
+      <Hero />
       <Footer />
     </>
   )

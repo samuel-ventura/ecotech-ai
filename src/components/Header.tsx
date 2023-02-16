@@ -1,6 +1,6 @@
 import styles from './styles/Header.module.css';
 import { Logo } from './Logo';
-import { SetStateAction, useState } from 'react';
+import { SetStateAction, useEffect, useState } from 'react';
 
 interface HeaderProps {
   useMediaQueries: () => {
@@ -13,14 +13,29 @@ export function Header({ useMediaQueries }: HeaderProps) {
   const { md, lg } = useMediaQueries();
 
   const [activeSession, setActiveSession] = useState(0);
-  
+
+  const [headerScrolled, setHeaderScrolled] = useState(false);
+
   function handleActiveSession(buttonIndex: SetStateAction<number>) {
     setActiveSession(buttonIndex)
   }
+  // ao dar o scroll inicial na página, o background mudará de transparente para cinza
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 0 && headerScrolled === false) {
+        setHeaderScrolled(true);
+      } else if (window.scrollY === 0 && headerScrolled !== false) { // verificando se o scroll voltou para a posição inicial da página
+        setHeaderScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [headerScrolled]);
 
   return (
     <>
-      <header>
+      <header className={headerScrolled ? styles.scrolled : ''}>
         <Logo />
 
         {md &&
