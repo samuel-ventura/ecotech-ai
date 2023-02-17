@@ -35,7 +35,6 @@ export function Footer() {
   return (
     <>
       <footer>
-        <span></span>
         <div className={styles.infoBusiness}>
           <div className={styles.logo}>
             <Logo />
