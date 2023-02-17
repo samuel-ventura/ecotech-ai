@@ -26,6 +26,37 @@
   padding: 2rem;
 }
 
+/* Blur central atrás do texto principal do hero */
+.content span:first-child {
+  position: absolute;
+  top: 20%;
+  height: 415px;
+  width: 210px;
+  background: var(--green);
+  transform: rotate(100deg);
+  opacity: 30%;
+  border-radius: 100%;
+  filter: blur(5rem) brightness(1.3);
+
+  z-index: -1;
+}
+
+/* Blur canto inferior direito do hero */
+.content span:last-child {
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+  height: 320px;
+  width: 90px;
+  background: var(--green);
+  transform: rotate(90deg);
+  opacity: 15%;
+  border-radius: 100%;
+  filter: blur(5rem) brightness(1);
+
+  z-index: -1;
+}
+
 .content h1 {
   font-size: 3.75rem;
   font-weight: 600;
