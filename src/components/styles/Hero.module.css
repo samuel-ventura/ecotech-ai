@@ -57,6 +57,12 @@
   z-index: -1;
 }
 
+@media (max-width: 780px) {
+  .content span {
+    display: none;
+  }
+}
+
 .content h1 {
   font-size: 3.75rem;
   font-weight: 600;
