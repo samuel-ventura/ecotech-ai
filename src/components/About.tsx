@@ -16,11 +16,13 @@ export function About() {
               <h2>Missão</h2>
               <p>Contribuir para um futuro mais verde e sustentável,utilizando a tecnologia de inteligência artificial para tornar a produção e o consumo de energia mais eficiente</p>
             </div>
+            <span className={styles.span1}></span>
             <div>
             <Star size="5.5rem" color="#67C22F" weight="fill" />
               <h2>Valores</h2>
               <p>Acreditamos na importância de preservar o meio ambiente e na responsabilidade de cada um em contribuir para esse objetivo. Valorizamos a inovação, a colaboração e a transparência em todas as nossas ações</p>
             </div>
+            <span className={styles.span2}></span>
             <div>
             <ListChecks size="5.5rem" color="#67C22F" weight="fill" />
               <h2>Áreas de atuação</h2>
