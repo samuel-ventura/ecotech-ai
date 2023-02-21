@@ -7,6 +7,7 @@ import { Footer } from './components/Footer';
 
 import './global.css'
 import styles from './App.module.css';
+import { Solutions } from "./components/Solutions";
 
 
 function useMediaQuery(query: string) {
@@ -36,6 +37,7 @@ function App() {
       <Header useMediaQueries={useMediaQueries} />
       <Hero />
       <About />
+      <Solutions />
       <Footer />
     </>
   )

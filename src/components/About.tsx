@@ -4,7 +4,7 @@ import styles from './styles/About.module.css';
 export function About() {
   return (
     <>
-      <section>
+      <section className={styles.fullAbout}>
         <div className={styles.about}>
           <div className={styles.title}>
             <span>A empresa</span>

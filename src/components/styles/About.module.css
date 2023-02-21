@@ -1,4 +1,4 @@
-section {
+.fullAbout {
   display: flex;
   width: 100%;
   min-height: 40rem;
@@ -53,8 +53,6 @@ section {
   width: 1px;
   max-height: 25rem;
   background: var(--gray-600);
-
-  transform: rotate(180deg);
 }
 
 .aboutCompany div svg {

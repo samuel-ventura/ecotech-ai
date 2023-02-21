@@ -1,0 +1,49 @@
+.solutions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 45rem;
+  background-color: var(--gray-900);
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.content {
+  display: flex;
+  max-width: 72rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content div {
+  flex: 1;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button {
+  background: transparent;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--gray-350);
+  border: none;
+}
+
+.buttons button:hover {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.carrosselImage {
+  width: 22.5rem;
+  height: 24rem;
+  background: url('../../assets/solar-spot.jpg') center no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  filter: drop-shadow(0 0.1rem 10px black);
+}
